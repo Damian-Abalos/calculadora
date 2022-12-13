@@ -4,14 +4,31 @@
     border: 1px solid black;
     border-radius: 15px;
     margin: auto;
-    padding: 30px;
     background-color: black;
+}
+
+#app:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('fondo.webp');
 }
 
 #app form{
     height: 100%;
     width: 100%;
     background-color: black;
+    padding: 30px;
+    border-radius: 15px;
+
+    position: relative;
+    z-index: 2;
 }
 
 .visor{
